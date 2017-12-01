@@ -22,8 +22,7 @@ const getEmotions = function (text) {
       headers: {
         Authorization: `Basic ${watsonToken}`,
       },
-    },
-  )
+    })
     .catch((err) => {
       console.log(`error from watson API:  ${err}`);
     }).then(Promise.resolve(false));
@@ -40,8 +39,7 @@ module.exports.avgTweetEmotion = function (twitterSearchTerm) {
       headers: {
         Authorization: `Bearer ${twitterToken}`,
       },
-    },
-  )
+    })
     .then(res => res.data.statuses.map(status => status.text))
     .then((texts) => {
       const emotions = [];
