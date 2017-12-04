@@ -4,12 +4,11 @@ const Movie = require('../db/Movie');
 if (!process.env.TMDBAPI) {
   config = require('../config/config.js');
 }
-const omdbToken = '23f31b33' || process.env.OMDBAPI || config.OMDBAPI;
+const omdbToken = process.env.OMDBAPI || config.OMDBAPI;
 
-// var json = require('./movieList.json');
+var json = require('./movieList.json');
 // var json = require('./movieList1980.json');
-var json = require('./movieList1900.json');
-// console.log(json.length);
+// var json = require('./movieList1900.json');
 
 var totalReadCount = 0;
 
