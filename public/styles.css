@@ -168,7 +168,7 @@ h2 {
 
 .sentiment-view {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .sentiment {
@@ -191,6 +191,10 @@ h2 {
   opacity: 1;
   top: -10%;
   transform: translateY(-10%);
+}
+
+.sentiment:hover .emoticon {
+  opacity: 1;
 }
 
 .emoticon-largest {

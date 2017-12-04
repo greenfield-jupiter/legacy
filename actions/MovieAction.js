@@ -19,6 +19,7 @@ export const fetchMovie = (id) => {
 
 export const fetchMovies = (query) => {
   const request = axios.get(`/search/${query}`);
+  console.log(request);
   return {
     type: FETCH_MOVIES,
     payload: request

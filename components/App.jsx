@@ -12,7 +12,7 @@ const App = (props) => {
       <div className="body-container">
         {props.children}
       </div>
-    </div>
+    </div>  
   );
 }
 
