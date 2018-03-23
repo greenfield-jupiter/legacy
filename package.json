@@ -20,7 +20,7 @@
     "express": "^4.16.2",
     "google-trends-api": "^4.3.0",
     "material-ui": "^0.19.4",
-    "moment": "^2.19.2",
+    "moment": "^2.21.0",
     "mongoose": "^4.13.4",
     "path": "^0.12.7",
     "prop-types": "^15.6.0",
